@@ -57,6 +57,7 @@ toast("Hello world!", Toast.LENGTH_LONG)
 
 
 Delegated Properties
+```kotlin
 class Example {
 var p: String by Delegate()
 }
@@ -66,7 +67,7 @@ return "$thisRef, thank you for delegating '${property.name}' to me!" }
 operator fun setValue(thisRef: Any?, property: KProperty<*>, value: String) {
 println("$value has been assigned to '${property.name} in $thisRef.'") }
 }
-
+```
 Delegate er en måde at lave custom getters og setters på som kan kaldes ved at sætte by delegate() på evt strings som så alle kalder den samme getter og setter metode.
 
 Eksempel fra anders repo
