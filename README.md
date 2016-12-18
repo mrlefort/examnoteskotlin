@@ -56,7 +56,7 @@ toast("Hello world!", Toast.LENGTH_LONG)
 ```
 
 
-Delegated Properties
+## Delegated Properties
 ```kotlin
 class Example {
 var p: String by Delegate()
@@ -75,3 +75,26 @@ https://github.com/eguahlak/2016b-sem4-template-master-detail/blob/master/app/sr
 
 Companion Object
 The companion object basically provides a place where one can put 'static' methods. Further more, a companion object, or companion module, has full access to the class members, including private ones. Companion Objects are great for encapsulating things like factory methods. Instead of having to have Foo and FooFactory everywhere, you can have a class with a companion object take on the factory responsibilities.
+
+
+## Collections
+
+MutableList is a subtype of List<T>
+
+Immutable collection is basically read only meaning you cannot change, add or delete values in the collection.
+
+Where as MutableList allows you to change, add or delete values.
+
+### Example of useage
+
+```kotlin
+val numbers: MutableList<Int> = mutableListOf(1, 2, 3)
+val readOnlyView: List<Int> = numbers
+println(numbers)        // prints "[1, 2, 3]"
+readonlyviews.add(1) // Would give an error since you cannot add on a immutablelist
+numbers.add(4)
+println(readOnlyView)   // prints "[1, 2, 3, 4]"
+readOnlyView.clear()    // -> does not compile
+```
+
+
