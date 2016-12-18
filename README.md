@@ -144,9 +144,14 @@ for (i in 1 until 10) { // i in [1, 10), 10 is excluded
 ```kotlin
 val numbers: MutableList<Int> = mutableListOf(1, 2, 3)   
     
-    numbers.map { it -> 
-                 var lol = it * 2; 
-                 lol = lol * 10; 
-                 println(lol) 
-                }
+    numbers.map { it -> // sends it to next function.
+                 var lol = it * 2; // lol = mutableListOf(1*2, 2*2, 3*2)
+                 lol = lol * 10;  // lol =  mutableListOf(2*10, 4*10, 6*10)
+                 println(lol) // prints 20, 40, 60
+                } 
+		
+		    numbers.map { // does not need arrow function if only one operation is run.
+                 println(it*5) // prints 5, 10, 15
+                } 
+		
 ```
