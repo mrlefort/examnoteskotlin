@@ -112,7 +112,7 @@ Here we increment every time by two. so it should run 5 times.
 the equivalent in kotlin would be:
 
 ```kotlin
-for (i in 4 downTo 1) print(i) // prints "4321"
+for (i in 1..4 step 2) print(i) // prints "13"
 ```
 
 Other Examples:
