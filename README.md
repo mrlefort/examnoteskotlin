@@ -115,7 +115,7 @@ the equivalent in kotlin would be:
 for (i in 1..4 step 2) print(i) // prints "13"
 ```
 
-Other Examples:
+### Example of useage
 ```kotlin
 if (i in 1..10) { // equivalent of 1 <= i && i <= 10
     println(i)
@@ -135,4 +135,18 @@ for (i in 4 downTo 1 step 2) print(i) // prints "42"
 for (i in 1 until 10) { // i in [1, 10), 10 is excluded
      println(i)
 }
+```
+
+
+## Lambdas
+
+### Example of useage
+```kotlin
+val numbers: MutableList<Int> = mutableListOf(1, 2, 3)   
+    
+    numbers.map { it -> 
+                 var lol = it * 2; 
+                 lol = lol * 10; 
+                 println(lol) 
+                }
 ```
