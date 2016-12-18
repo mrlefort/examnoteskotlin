@@ -140,6 +140,8 @@ for (i in 1 until 10) { // i in [1, 10), 10 is excluded
 
 ## Lambdas
 
+A lambda expression or an anonymous function is a "function literal", i.e. a function that is not declared, but passed immediately as an expression.
+
 ### Example of useage
 ```kotlin
 val numbers: MutableList<Int> = mutableListOf(1, 2, 3)   
