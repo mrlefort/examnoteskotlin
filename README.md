@@ -73,7 +73,7 @@ Delegate er en måde at lave custom getters og setters på som kan kaldes ved at
 Eksempel fra anders repo
 https://github.com/eguahlak/2016b-sem4-template-master-detail/blob/master/app/src/main/java/dk/kalhauge/Adapter.kt
 
-Companion Object
+####Companion Object
 The companion object basically provides a place where one can put 'static' methods. Further more, a companion object, or companion module, has full access to the class members, including private ones. Companion Objects are great for encapsulating things like factory methods. Instead of having to have Foo and FooFactory everywhere, you can have a class with a companion object take on the factory responsibilities.
 
 
